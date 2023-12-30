@@ -1,0 +1,227 @@
+body {
+    font-family: "Kodchasan", sans-serif;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #3b383d;
+    font-weight: bold;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    width: 15em;
+}
+
+.btn-common {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.btn-lb {
+    color: #46434c !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn {
+    font-family: "Kodchasan", sans-serif;
+}
+
+/* begin:: Rơi 1 lần */
+.btn-0 {
+    --theme: #86c0de;
+    z-index: 0;
+    cursor: pointer;
+    position: relative;
+    width: 5em;
+    height: 5em;
+    padding-inline: .5em;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-shadow: 0 1px 4px #1111;
+    background: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.btn-0::selection {
+    color: transparent;
+    background: transparent;
+}
+
+.btn-0::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: var(--theme);
+}
+
+.btn-0.is-shrink-0::before {
+    animation: .2s both;
+}
+
+.btn-0.is-shrink-0::before,
+.btn-0.is-anim-0::before {
+    will-change: animation;
+}
+
+:where(.drop) .btn-0::after {
+    --size: 30%;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 40%;
+    left: calc(50% - var(--size) / 2);
+    width: var(--size);
+    height: var(--size);
+    background: var(--theme);
+}
+
+:where(.drop) .btn-0.is-shrink-0::after {
+    animation: .2s both;
+}
+
+:where(.drop) .btn-0.is-shrink-0::after,
+:where(.drop) .btn-0.is-anim-0::after {
+    will-change: animation;
+}
+
+.btn-0 {
+    align-self: end;
+}
+
+.btn-0::before,
+.btn-0::after {
+    border-radius: 5em;
+    transform-origin: center bottom;
+}
+
+.btn-0.is-shrink-0::before,
+.btn-0.is-shrink-0::after {
+    animation-name: shrink;
+}
+
+.btn-0.is-anim-0::before {
+    animation: bounce 1.2s;
+}
+
+.btn-0.is-anim-0::after {
+    animation: drop1 1.2s;
+}
+/* end:: Rơi 1 lần */
+
+/* begin:: Rơi 2 lần */
+.btn-1 {
+    --theme: #86c0de;
+    z-index: 0;
+    cursor: pointer;
+    position: relative;
+    width: 5em;
+    height: 5em;
+    padding-inline: .5em;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-shadow: 0 1px 4px #1111;
+    background: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.btn-1::selection {
+    color: transparent;
+    background: transparent;
+}
+
+.btn-1::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: var(--theme);
+}
+
+.btn-1.is-shrink-1::before {
+    animation: .2s both;
+}
+
+.btn-1.is-shrink-1::before,
+.btn-1.is-anim-1::before {
+    will-change: animation;
+}
+
+:where(.drop) .btn-1::after {
+    --size: 30%;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 40%;
+    left: calc(50% - var(--size) / 2);
+    width: var(--size);
+    height: var(--size);
+    background: var(--theme);
+}
+
+:where(.drop) .btn-1.is-shrink-1::after {
+    animation: .2s both;
+}
+
+:where(.drop) .btn-1.is-shrink-1::after,
+:where(.drop) .btn-1.is-anim-1::after {
+    will-change: animation;
+}
+
+.btn-1 {
+    align-self: end;
+}
+
+.btn-1::before,
+.btn-1::after {
+    border-radius: 5em;
+    transform-origin: center bottom;
+}
+
+.btn-1.is-shrink-1::before,
+.btn-1.is-shrink-1::after {
+    animation-name: shrink;
+}
+
+.btn-1.is-anim-1::before {
+    animation: bounce 1.4s;
+}
+
+.btn-1.is-anim-1::after {
+    animation: drop2 1.4s;
+}
+
+/* end:: Rơi 2 lần */
